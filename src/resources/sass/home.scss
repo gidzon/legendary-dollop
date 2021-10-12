@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #FFF5EE;
+}
+
+.hidden{
+    display: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #808080;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0px auto;
+        .product{
+            flex-basis: 29.6%;
+            margin: 1%;
+            img{
+                max-width: 100%;
+                border-radius: 10%;
+            }
+    
+            .product_title, .product_price{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    aside{
+        flex-basis: 95%;
+        position: relative;
+        menu{
+            color: #ffffff;
+            padding: 50px 30px 10px 30px;
+            
+            font-size: 25px;
+            background-color: #6cb2eb;
+            border-radius: 15px;
+            height: 100%;
+            text-transform: uppercase;
+            display: flex;
+            flex-wrap: wrap;
+            .search{
+                margin-bottom: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+    
+            li{
+                margin-bottom: 20px;
+                list-style-type: none;
+            }
+
+            nav, .search{
+                flex-basis: 90%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .clouse{
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 40px;
+        }
+    }
+
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .wrapper{
+        .container{
+            .product{
+                flex-basis: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper{
+        .container{
+            .product{
+                flex-basis: 80%;
+            }
+        }
+    }
+}
